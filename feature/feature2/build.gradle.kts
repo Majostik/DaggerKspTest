@@ -19,6 +19,7 @@ android {
 }
 
 dependencies {
+    implementation(projects.core)
 
     implementation(libs.coreKtx)
     implementation(libs.appcompat)

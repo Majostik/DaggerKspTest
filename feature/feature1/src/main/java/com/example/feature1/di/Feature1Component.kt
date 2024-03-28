@@ -1,6 +1,6 @@
-package com.example.feature_1.di
+package com.example.feature1.di
 
-import com.example.feature_1.di.module.Feature1ModuleOne
+import com.example.feature1.di.module.Feature1ModuleOne
 import dagger.Component
 
 @Component(
