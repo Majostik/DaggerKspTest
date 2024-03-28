@@ -22,8 +22,11 @@ import com.example.feature33.feature.Feature33StubTwo
 import com.example.feature33.feature.Feature33StubTwoImpl
 import dagger.Binds
 import dagger.Module
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 
 @Module
+@InstallIn(SingletonComponent::class)
 interface Feature33ModuleOne {
 
     @Binds

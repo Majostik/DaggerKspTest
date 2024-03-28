@@ -3,6 +3,7 @@ plugins {
     id("com.android.library")
     alias(libs.plugins.org.jetbrains.kotlin.android)
     id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -24,6 +25,6 @@ dependencies {
     implementation(libs.coreKtx)
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.dagger)
-    kapt(libs.daggerCompiler)
+    implementation(libs.hilt)
+    kapt(libs.hiltCompiler)
 }

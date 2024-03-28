@@ -2,7 +2,6 @@
 plugins {
     id("com.android.library")
     alias(libs.plugins.org.jetbrains.kotlin.android)
-    id("kotlin-kapt")
 }
 
 android {
@@ -20,5 +19,5 @@ android {
 
 dependencies {
 
-    implementation(libs.dagger)
+    implementation(libs.hilt)
 }

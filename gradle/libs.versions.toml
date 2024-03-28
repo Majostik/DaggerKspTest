@@ -27,7 +27,7 @@ agp = "8.1.4"
 org-jetbrains-kotlin-android190 = "1.9.23"
 androidx-test-ext-junit115 = "1.1.5"
 androidx-test-espresso-espresso-core = "3.5.1"
-dagger = "2.50"
+hilt = "2.50"
 
 [libraries]
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appCompat" }
@@ -53,8 +53,8 @@ retrofit-converter-kotlinxSerialization = { group = "com.jakewharton.retrofit", 
 okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-dagger = { group = "com.google.dagger", name = "dagger", version.ref = "dagger" }
-daggerCompiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "dagger" }
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hiltCompiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 
 kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 buildGradle = { module = "com.android.tools.build:gradle", version.ref ="buildGradle" }
