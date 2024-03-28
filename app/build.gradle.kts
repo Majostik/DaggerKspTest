@@ -1,7 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -40,7 +41,7 @@ dependencies {
     implementation(libs.coreKtx)
     implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.dagger)
+    implementation(libs.hilt)
 
     implementation(projects.core)
     implementation(projects.feature.feature1)
@@ -93,5 +94,6 @@ dependencies {
     implementation(projects.feature.feature48)
     implementation(projects.feature.feature49)
     implementation(projects.feature.feature50)
-    kapt(libs.daggerCompiler)
+
+    ksp(libs.hiltCompiler)
 }

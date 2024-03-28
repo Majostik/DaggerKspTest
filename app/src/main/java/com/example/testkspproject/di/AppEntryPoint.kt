@@ -50,19 +50,13 @@ import com.example.feature6.di.Feature6Dependencies
 import com.example.feature7.di.Feature7Dependencies
 import com.example.feature8.di.Feature8Dependencies
 import com.example.feature9.di.Feature9Dependencies
-import com.example.testkspproject.App
-import dagger.BindsInstance
-import dagger.Component
-import javax.inject.Singleton
+import dagger.hilt.EntryPoint
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 
-@Singleton
-@Component(
-    modules = [
-        AppModule::class,
-        DependenciesModule::class
-    ]
-)
-interface AppComponent:
+@InstallIn(SingletonComponent::class)
+@EntryPoint
+interface AppEntryPoint :
     Feature1Dependencies,
     Feature2Dependencies,
     Feature3Dependencies,
@@ -112,13 +106,4 @@ interface AppComponent:
     Feature47Dependencies,
     Feature48Dependencies,
     Feature49Dependencies,
-    Feature50Dependencies {
-
-    fun inject(app: App)
-
-    @Component.Factory
-    interface Factory {
-
-        fun create(@BindsInstance app: App): AppComponent
-    }
-}
+    Feature50Dependencies
