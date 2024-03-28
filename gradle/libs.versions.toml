@@ -11,7 +11,7 @@ composeActivity = "1.8.2"
 compose-navigation = "2.7.6"
 retrofit = "2.9.0"
 coroutines = "1.7.3"
-kotlin = "1.9.21"
+kotlin = "1.9.23"
 buildGradle = "8.2.1"
 accompanist = "0.28.0"
 org-jetbrains-kotlin-android = "1.8.0"
@@ -62,7 +62,6 @@ androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidx-test-espresso-espresso-core" }
 
 [plugins]
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android190" }
 com-android-library = { id = "com.android.library", version.ref = "agp" }
