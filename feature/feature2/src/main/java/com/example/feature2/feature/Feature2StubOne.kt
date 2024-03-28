@@ -1,4 +1,4 @@
-package com.example.feature_1.feature
+package com.example.feature2.feature
 
 import javax.inject.Inject
 

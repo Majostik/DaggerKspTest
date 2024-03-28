@@ -24,7 +24,7 @@ kotlinxSerializationConverter = "1.0.0"
 kotlinxSerialization = "1.6.0"
 hiltNavigation = "1.1.0"
 agp = "8.1.4"
-org-jetbrains-kotlin-android190 = "1.9.0"
+org-jetbrains-kotlin-android190 = "1.9.23"
 androidx-test-ext-junit115 = "1.1.5"
 androidx-test-espresso-espresso-core = "3.5.1"
 dagger = "2.50"
@@ -65,3 +65,4 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android190" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
